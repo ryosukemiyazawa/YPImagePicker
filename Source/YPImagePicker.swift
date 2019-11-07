@@ -43,6 +43,7 @@ open class YPImagePicker: UINavigationController {
     
     /// Get a YPImagePicker with the specified configuration.
     public required init(configuration: YPImagePickerConfiguration) {
+        print("customized from ryosukemiyazawa")
         YPImagePickerConfiguration.shared = configuration
         picker = YPPickerVC()
         super.init(nibName: nil, bundle: nil)
