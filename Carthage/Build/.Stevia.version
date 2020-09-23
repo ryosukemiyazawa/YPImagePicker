@@ -1,23 +1,26 @@
 {
-  "Mac" : [
-
+  "sourceHash" : "b05e810e0ee1d1a5145b9e66ab8be83d62e38d8f86f014e3b293a058eef7ceeb",
+  "tvOS" : [
+    {
+      "name" : "Stevia",
+      "hash" : "5691d09271f116e85cf478507125fe9512c4e957a177b421a46e1f1ada01d10d",
+      "swiftToolchainVersion" : "5.3+df4651b6117805e4aa1fc1bc0670304e"
+    }
+  ],
+  "configuration" : "Release",
+  "iOS" : [
+    {
+      "name" : "Stevia",
+      "hash" : "e58dbbd11d7e773ba2e9f7c7846d73d291d906e8c97a889cc28ab6e179a9a3b0",
+      "swiftToolchainVersion" : "5.3+df4651b6117805e4aa1fc1bc0670304e"
+    }
   ],
   "watchOS" : [
 
   ],
-  "tvOS" : [
-    {
-      "name" : "Stevia",
-      "hash" : "d2efad52d8e7460189aa752f1e4e5496832d9a950d5f4582776b932ad7cfdb18",
-      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-    }
+  "commitish" : "ebf7ef05c70aaca1d97492de0bbee2c587df031d",
+  "Mac" : [
+
   ],
-  "commitish" : "4.7.3",
-  "iOS" : [
-    {
-      "name" : "Stevia",
-      "hash" : "ef61389c5f3e0ee24755e69a7c071100f3c112636627510694542493904fea22",
-      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-    }
-  ]
+  "resolvedDependenciesHash" : "d41d8cd98f00b204e9800998ecf8427e"
 }

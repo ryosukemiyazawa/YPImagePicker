@@ -605,7 +605,7 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
     // MARK: - Player
     
     func pausePlayer() {
-        v.assetZoomableView.videoView.pause()
+        
     }
     
     // MARK: - Deinit

@@ -324,7 +324,6 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
     }
     
     func stopAll() {
-        libraryVC?.v.assetZoomableView.videoView.deallocate()
         videoVC?.stopCamera()
         cameraVC?.stopCamera()
     }
