@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Stevia
+import UIKit
 import Photos
 
 protocol ImagePickerDelegate: AnyObject {
