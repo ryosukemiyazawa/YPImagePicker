@@ -15,7 +15,7 @@ class YPSelectionsGalleryView: UIView {
     convenience init() {
         self.init(frame: .zero)
     
-        sv(
+        subviews(
             collectionView
         )
         

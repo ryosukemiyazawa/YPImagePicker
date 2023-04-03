@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol YPBottomPagerDelegate: class {
+protocol YPBottomPagerDelegate: AnyObject {
     func pagerScrollViewDidScroll(_ scrollView: UIScrollView)
     func pagerDidSelectController(_ vc: UIViewController)
 }
@@ -26,7 +26,7 @@ open class YPBottomPager: UIViewController, UIScrollViewDelegate {
     }
     
     override open func loadView() {
-        self.automaticallyAdjustsScrollViewInsets = false
+        v.scrollView.contentInsetAdjustmentBehavior = .never
         v.scrollView.delegate = self
         view = v
     }
@@ -54,7 +54,7 @@ open class YPBottomPager: UIViewController, UIScrollViewDelegate {
             c.willMove(toParent: self)
             addChild(c)
             let x: CGFloat = CGFloat(index) * viewWidth
-            v.scrollView.sv(c.view)
+            v.scrollView.subviews(c.view)
             c.didMove(toParent: self)
             c.view.left(x)
             c.view.top(0)
@@ -98,7 +98,7 @@ open class YPBottomPager: UIViewController, UIScrollViewDelegate {
             return
         }
         currentPage = page
-        //select menu item and deselect others
+        // select menu item and deselect others
         for (i, mi) in v.header.menuItems.enumerated() {
             if i == page {
                 mi.select()
@@ -114,7 +114,7 @@ open class YPBottomPager: UIViewController, UIScrollViewDelegate {
         let screenWidth = YPImagePickerConfiguration.screenWidth
         let x = CGFloat(page) * screenWidth
         v.scrollView.setContentOffset(CGPoint(x: x, y: 0), animated: false)
-        //select menut item and deselect others
+        // select menut item and deselect others
         for mi in v.header.menuItems {
             mi.deselect()
         }

@@ -20,7 +20,7 @@ class YPLoadingView: UIView {
         let stack = UIStackView(arrangedSubviews: [spinner, processingLabel])
         stack.axis = .vertical
         stack.spacing = 20
-        sv(
+        subviews(
             stack
         )
         

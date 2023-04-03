@@ -26,7 +26,7 @@ final class YPPagerMenu: UIView {
         let menuItemWidth: CGFloat = screenWidth / CGFloat(menuItems.count)
         var previousMenuItem: YPMenuItem?
         for m in menuItems {
-            sv(
+            subviews(
                 m
             )
             
