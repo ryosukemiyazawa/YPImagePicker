@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /**
      Centers the view in its container.

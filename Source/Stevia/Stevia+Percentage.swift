@@ -9,24 +9,24 @@
 #if canImport(UIKit)
 import UIKit
 
-public struct SteviaPercentage {
+struct SteviaPercentage {
     let value: Double
 }
 
 postfix operator %
-public postfix func % (v: Double) -> SteviaPercentage {
+postfix func % (v: Double) -> SteviaPercentage {
     SteviaPercentage(value: Double(v))
 }
 
-public postfix func % (v: CGFloat) -> SteviaPercentage {
+postfix func % (v: CGFloat) -> SteviaPercentage {
     Double(v)%
 }
 
-public postfix func % (v: Int) -> SteviaPercentage {
+postfix func % (v: Int) -> SteviaPercentage {
     Double(v)%
 }
 
-public extension UIView {
+extension UIView {
     
     /**
      Adds an Autolayout constraint for sizing the view.

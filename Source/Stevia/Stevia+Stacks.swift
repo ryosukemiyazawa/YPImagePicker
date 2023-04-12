@@ -13,12 +13,12 @@ import UIKit
 //
 //}
 
-public protocol SteviaLayoutItem {
+protocol SteviaLayoutItem {
     var any: Any {get}
 }
 
 extension SteviaLayoutItem {
-    public var any: Any { self }
+    var any: Any { self }
 }
 extension UIView: SteviaLayoutItem {}
 extension Int: SteviaLayoutItem {}
@@ -31,17 +31,17 @@ extension SteviaFlexibleMargin: SteviaLayoutItem {}
 extension SteviaPercentage: SteviaLayoutItem {}
 extension Array: SteviaLayoutItem where Element: UIView {}
 
-public struct FlexibleSpace {
-    public init() {}
+struct FlexibleSpace {
+    init() {}
 }
 
-@resultBuilder public struct SteviaLayoutBuilder {
-    public static func buildBlock(_ content: SteviaLayoutItem...) -> [SteviaLayoutItem] {
+@resultBuilder struct SteviaLayoutBuilder {
+    static func buildBlock(_ content: SteviaLayoutItem...) -> [SteviaLayoutItem] {
         return content
     }
 }
 
-public extension UIView {
+extension UIView {
     @discardableResult
     func layout(@SteviaLayoutBuilder content: () -> [SteviaLayoutItem]) -> UIView {
         let subviews = content()
@@ -51,7 +51,7 @@ public extension UIView {
     }
 }
 
-public extension UIView {
+extension UIView {
     
     /**
      

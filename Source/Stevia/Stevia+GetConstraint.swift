@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /** Gets the left constraint if found.
     

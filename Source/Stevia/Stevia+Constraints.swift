@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Shortcut
 
-public extension UIView {
+extension UIView {
     
     /**
      Helper for creating and adding NSLayoutConstraint but with default values provided.
@@ -84,7 +84,7 @@ func constraint(item view1: AnyObject,
     return c
 }
 
-public extension UIView {
+extension UIView {
 
 /**
      Get User added constraints. For making complex changes on layout, we need to remove user added constraints.
@@ -106,7 +106,7 @@ public extension UIView {
 
 // MARK: - Other
 
-public extension UIView {
+extension UIView {
 
     /**
      Makes a view follow another view's frame.

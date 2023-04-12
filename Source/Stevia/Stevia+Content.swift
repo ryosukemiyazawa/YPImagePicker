@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public extension UIButton {
+extension UIButton {
     
     /**
      Sets the title of the button for normal State
@@ -52,7 +52,7 @@ public extension UIButton {
     }
 }
 
-public extension UITextField {
+extension UITextField {
     /**
      Sets the textfield placeholder but in a chainable fashion
      - Returns: Itself for chaining purposes
@@ -64,7 +64,7 @@ public extension UITextField {
     }
 }
 
-public extension UILabel {
+extension UILabel {
     /**
      Sets the label text but in a chainable fashion
      - Returns: Itself for chaining purposes
@@ -96,7 +96,7 @@ extension UIImageView {
      - Returns: Itself for chaining purposes
      */
     @discardableResult
-    public func image(_ t: String) -> Self {
+    func image(_ t: String) -> Self {
         image = UIImage(named: t)
         return self
     }

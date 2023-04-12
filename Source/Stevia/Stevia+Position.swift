@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /** Sets the left margin for a view.
      

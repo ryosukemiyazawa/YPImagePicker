@@ -10,7 +10,7 @@
 import UIKit
 
 @available(iOS 9.0, *)
-public struct SteviaLayoutYAxisAnchor {
+struct SteviaLayoutYAxisAnchor {
     let anchor: NSLayoutYAxisAnchor
     let constant: Double
     
@@ -21,7 +21,7 @@ public struct SteviaLayoutYAxisAnchor {
 }
 
 @available(iOS 9.0, *)
-public struct SteviaLayoutXAxisAnchor {
+struct SteviaLayoutXAxisAnchor {
     let anchor: NSLayoutXAxisAnchor
     let constant: Double
     
@@ -32,7 +32,7 @@ public struct SteviaLayoutXAxisAnchor {
 }
 
 @available(iOS 9.0, *)
-public extension UILayoutGuide {
+extension UILayoutGuide {
 
     var Top: SteviaLayoutYAxisAnchor {
         return SteviaLayoutYAxisAnchor(anchor: topAnchor)
@@ -69,7 +69,7 @@ public extension UILayoutGuide {
 
 @available(iOS 9.0, *)
 @discardableResult
-public func == (left: SteviaAttribute, right: SteviaLayoutYAxisAnchor) -> NSLayoutConstraint {
+func == (left: SteviaAttribute, right: SteviaLayoutYAxisAnchor) -> NSLayoutConstraint {
     
     var constraint = NSLayoutConstraint()
     
@@ -91,7 +91,7 @@ public func == (left: SteviaAttribute, right: SteviaLayoutYAxisAnchor) -> NSLayo
 
 @available(iOS 9.0, *)
 @discardableResult
-public func == (left: SteviaAttribute, right: SteviaLayoutXAxisAnchor) -> NSLayoutConstraint {
+func == (left: SteviaAttribute, right: SteviaLayoutXAxisAnchor) -> NSLayoutConstraint {
     
     var constraint = NSLayoutConstraint()
     
@@ -123,80 +123,80 @@ public func == (left: SteviaAttribute, right: SteviaLayoutXAxisAnchor) -> NSLayo
 
 @available(iOS 9.0, *)
 @discardableResult
-public func + (left: SteviaLayoutYAxisAnchor, right: Double) -> SteviaLayoutYAxisAnchor {
+func + (left: SteviaLayoutYAxisAnchor, right: Double) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: right)
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func - (left: SteviaLayoutYAxisAnchor, right: Double) -> SteviaLayoutYAxisAnchor {
+func - (left: SteviaLayoutYAxisAnchor, right: Double) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: -right)
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func + (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxisAnchor {
+func + (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: right)
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func - (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxisAnchor {
+func - (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: -right)
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func + (left: SteviaLayoutYAxisAnchor, right: CGFloat) -> SteviaLayoutYAxisAnchor {
+func + (left: SteviaLayoutYAxisAnchor, right: CGFloat) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: Double(right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func - (left: SteviaLayoutYAxisAnchor, right: CGFloat) -> SteviaLayoutYAxisAnchor {
+func - (left: SteviaLayoutYAxisAnchor, right: CGFloat) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: Double(-right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func + (left: SteviaLayoutXAxisAnchor, right: CGFloat) -> SteviaLayoutXAxisAnchor {
+func + (left: SteviaLayoutXAxisAnchor, right: CGFloat) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: Double(right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func - (left: SteviaLayoutXAxisAnchor, right: CGFloat) -> SteviaLayoutXAxisAnchor {
+func - (left: SteviaLayoutXAxisAnchor, right: CGFloat) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: Double(-right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func + (left: SteviaLayoutYAxisAnchor, right: Int) -> SteviaLayoutYAxisAnchor {
+func + (left: SteviaLayoutYAxisAnchor, right: Int) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: Double(right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func - (left: SteviaLayoutYAxisAnchor, right: Int) -> SteviaLayoutYAxisAnchor {
+func - (left: SteviaLayoutYAxisAnchor, right: Int) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: Double(-right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func + (left: SteviaLayoutXAxisAnchor, right: Int) -> SteviaLayoutXAxisAnchor {
+func + (left: SteviaLayoutXAxisAnchor, right: Int) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: Double(right))
 }
 
 @available(iOS 9.0, *)
 @discardableResult
-public func - (left: SteviaLayoutXAxisAnchor, right: Int) -> SteviaLayoutXAxisAnchor {
+func - (left: SteviaLayoutXAxisAnchor, right: Int) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: Double(-right))
 }
 
 // UILayoutSupport
 
 @available(iOS 9.0, *)
-public extension UILayoutSupport {
+extension UILayoutSupport {
     
     var Top: SteviaLayoutYAxisAnchor {
         return SteviaLayoutYAxisAnchor(anchor: topAnchor)

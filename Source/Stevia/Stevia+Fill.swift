@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public extension UIView {
+extension UIView {
         
     /**
      Adds the constraints needed for the view to fill its `superview`.

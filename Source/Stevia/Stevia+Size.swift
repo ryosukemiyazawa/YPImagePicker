@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /**
      Adds an Autolayout constraint for sizing the view.
@@ -268,13 +268,13 @@ public extension UIView {
  
  */
 @discardableResult
-public func equal(sizes views: UIView...) -> [UIView] {
+func equal(sizes views: UIView...) -> [UIView] {
     return equal(sizes: views)
 }
 
 @available(*, deprecated, renamed:"equal(sizes:)")
 @discardableResult
-public func equalSizes(_ views: UIView...) -> [UIView] {
+func equalSizes(_ views: UIView...) -> [UIView] {
     return equal(sizes: views)
 }
 
@@ -289,7 +289,7 @@ public func equalSizes(_ views: UIView...) -> [UIView] {
  
  */
 @discardableResult
-public func equal(sizes views: [UIView]) -> [UIView] {
+func equal(sizes views: [UIView]) -> [UIView] {
     equal(heights: views)
     equal(widths: views)
     return views
@@ -297,7 +297,7 @@ public func equal(sizes views: [UIView]) -> [UIView] {
 
 @available(*, deprecated, renamed:"equal(sizes:)")
 @discardableResult
-public func equalSizes(_ views: [UIView]) -> [UIView] {
+func equalSizes(_ views: [UIView]) -> [UIView] {
     equal(heights: views)
     equal(widths: views)
     return views
@@ -314,13 +314,13 @@ public func equalSizes(_ views: [UIView]) -> [UIView] {
  
  */
 @discardableResult
-public func equal(widths views: UIView...) -> [UIView] {
+func equal(widths views: UIView...) -> [UIView] {
     return equal(widths: views)
 }
 
 @available(*, deprecated, renamed:"equal(widths:)")
 @discardableResult
-public func equalWidths(_ views: UIView...) -> [UIView] {
+func equalWidths(_ views: UIView...) -> [UIView] {
     return equal(widths: views)
 }
 
@@ -335,14 +335,14 @@ public func equalWidths(_ views: UIView...) -> [UIView] {
  
  */
 @discardableResult
-public func equal(widths views: [UIView]) -> [UIView] {
+func equal(widths views: [UIView]) -> [UIView] {
     equal(.width, views: views)
     return views
 }
 
 @available(*, deprecated, renamed:"equal(widths:)")
 @discardableResult
-public func equalWidths(_ views: [UIView]) -> [UIView] {
+func equalWidths(_ views: [UIView]) -> [UIView] {
     equal(.width, views: views)
     return views
 }
@@ -358,13 +358,13 @@ public func equalWidths(_ views: [UIView]) -> [UIView] {
  
  */
 @discardableResult
-public func equal(heights views: UIView...) -> [UIView] {
+func equal(heights views: UIView...) -> [UIView] {
     return equal(heights: views)
 }
 
 @available(*, deprecated, renamed:"equal(heights:)")
 @discardableResult
-public func equalHeights(_ views: UIView...) -> [UIView] {
+func equalHeights(_ views: UIView...) -> [UIView] {
     return equal(heights: views)
 }
 
@@ -379,14 +379,14 @@ public func equalHeights(_ views: UIView...) -> [UIView] {
  
  */
 @discardableResult
-public func equal(heights views: [UIView]) -> [UIView] {
+func equal(heights views: [UIView]) -> [UIView] {
     equal(.height, views: views)
     return views
 }
 
 @available(*, deprecated, renamed:"equal(heights:)")
 @discardableResult
-public func equalHeights(_ views: [UIView]) -> [UIView] {
+func equalHeights(_ views: [UIView]) -> [UIView] {
     equal(.height, views: views)
     return views
 }

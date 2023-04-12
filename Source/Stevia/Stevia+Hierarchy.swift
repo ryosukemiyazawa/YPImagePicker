@@ -9,13 +9,13 @@
 #if canImport(UIKit)
 import UIKit
 
-@resultBuilder public struct SubviewsBuilder {
-    public static func buildBlock(_ content: UIView...) -> [UIView] {
+@resultBuilder struct SubviewsBuilder {
+    static func buildBlock(_ content: UIView...) -> [UIView] {
         return content
     }
 }
 
-public extension UIView {
+extension UIView {
     
     @available(*, deprecated, renamed: "subviews")
     @discardableResult
@@ -186,7 +186,7 @@ public extension UIView {
     }
 }
 
-public extension UITableViewCell {
+extension UITableViewCell {
     
     /**
      Defines the view hierachy for the view.
@@ -260,7 +260,7 @@ public extension UITableViewCell {
     }
 }
 
-public extension UICollectionViewCell {
+extension UICollectionViewCell {
     /**
      Defines the view hierachy for the view.
      
@@ -305,7 +305,7 @@ public extension UICollectionViewCell {
 }
 
 
-public extension UIStackView {
+extension UIStackView {
     
     @discardableResult
     func arrangedSubviews(@SubviewsBuilder content: () -> [UIView]) -> UIView {
