@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Stevia
+//import Stevia
 
 
 internal class YPCameraView: UIView, UIGestureRecognizerDelegate {

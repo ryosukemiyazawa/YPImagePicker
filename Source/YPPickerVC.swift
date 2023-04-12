@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Stevia
+//import Stevia
 import Photos
 
 protocol YPPickerVCDelegate: AnyObject {

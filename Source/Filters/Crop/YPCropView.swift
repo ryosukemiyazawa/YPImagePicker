@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Stevia
+//import Stevia
 
 final class YPCropView: UIView {
     

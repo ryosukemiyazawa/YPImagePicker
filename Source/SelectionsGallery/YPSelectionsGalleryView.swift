@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Stevia
+//import Stevia
 
 class YPSelectionsGalleryView: UIView {
     

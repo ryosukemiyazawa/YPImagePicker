@@ -1,7 +1,6 @@
 #!/bin/sh
 
-rm -r build
-mkdir build
+echo "SETUP" 
 
 PROJECT_DIR=.
 CONFIGURATION=YPImagePicker
@@ -21,6 +20,7 @@ XCFRAMEWORK_DIR=${OUTPUT_DIR}/${CONFIGURATION}-xcframework
 
 # 出力先ディレクトリ削除
 rm -rf ${OUTPUT_DIR}
+mkdir ${OUTPUT_DIR}
 
 # 中間ファイルの出力先ディレクトリ作成
 mkdir -p ${DERIVED_DIR}
