@@ -10,7 +10,8 @@
 		321E6D87240CFABC00D76CD8 /* UINavigationBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E6D86240CFABC00D76CD8 /* UINavigationBar+Extensions.swift */; };
 		327D7B592409510300B9C368 /* YPFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D7B582409510300B9C368 /* YPFonts.swift */; };
 		327D7B69240CEF2F00B9C368 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D7B68240CEF2F00B9C368 /* UIBarButtonItem+Extensions.swift */; };
-		4500082B3B62CA66D64563BC /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8856E5E414FCD9DBEA165EA9 /* Pods_Example.framework */; };
+		79840EFC29E6D32C00A49EFB /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 79840EFB29E6D32C00A49EFB /* Stevia */; };
+		79840EFE29E6D32C00A49EFB /* PryntTrimmerView in Frameworks */ = {isa = PBXBuildFile; productRef = 79840EFD29E6D32C00A49EFB /* PryntTrimmerView */; };
 		8458057421819B95004F241C /* YPImagePickerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C6D6991F1FB5C100711DB2 /* YPImagePickerLocalizable.strings */; };
 		99019E4C2018CCD6007325C2 /* YPBottomPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99019E4B2018CCD6007325C2 /* YPBottomPagerView.swift */; };
 		99019E4E2018CD31007325C2 /* YPPagerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99019E4D2018CD31007325C2 /* YPPagerMenu.swift */; };
@@ -211,7 +212,6 @@
 /* Begin PBXFileReference section */
 		16550C5C214D5EE60090BADF /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
 		166695DE253EFF0100F6EF9E /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
-		1CF8B597BBC32060C9FA476A /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2577138123B1E09300BB9C86 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
 		2577138223B1E09E00BB9C86 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
 		321E6D86240CFABC00D76CD8 /* UINavigationBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extensions.swift"; sourceTree = "<group>"; };
@@ -281,7 +281,6 @@
 		99D1DC2A1F9788930047F0E0 /* YPImagePickerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPImagePickerConfiguration.swift; sourceTree = "<group>"; };
 		A7FD716620755C2D0044A8E8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
 		AA69BCF122E601D100FBB925 /* YPDeviceOrientationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPDeviceOrientationHelper.swift; sourceTree = "<group>"; };
-		BEED427CB4F6E5B8C20B6F13 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC3DAC4526C6FCAA007FD95A /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
 		E3E492BB2169012B002BA807 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
 		E5287F5820B908720052153D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/YPImagePickerLocalizable.strings; sourceTree = "<group>"; };
@@ -319,7 +318,6 @@
 		EBA37B0626F73080005DAAD4 /* YPAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPAlbumCell.swift; sourceTree = "<group>"; };
 		EBA37B0726F73080005DAAD4 /* YPAlbumsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPAlbumsManager.swift; sourceTree = "<group>"; };
 		EBA37B0826F73080005DAAD4 /* YPAlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPAlbumView.swift; sourceTree = "<group>"; };
-		EBA37B1426F737CE005DAAD4 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EBA37B3826F7493A005DAAD4 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		EBA37B4F26F749C6005DAAD4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA37B5126F749C6005DAAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -345,6 +343,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79840EFE29E6D32C00A49EFB /* PryntTrimmerView in Frameworks */,
+				79840EFC29E6D32C00A49EFB /* Stevia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +354,6 @@
 			files = (
 				EBA37BCD26F75BCC005DAAD4 /* Stevia in Frameworks */,
 				EBA37BD026F75C67005DAAD4 /* PryntTrimmerView in Frameworks */,
-				4500082B3B62CA66D64563BC /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,13 +364,11 @@
 			isa = PBXGroup;
 			children = (
 				EB84ADD522F35506003667B5 /* YPImagePicker.podspec */,
-				EBA37B1426F737CE005DAAD4 /* Podfile */,
 				EBDDF0E62787069E00A372FD /* Package.swift */,
 				EB5ACE2B2620802A00C3288D /* README.md */,
 				99C6D69D1F1FB5C100711DB2 /* Source */,
 				EBA37B5026F749C6005DAAD4 /* Example */,
 				52412A941CA6114A0073C4BE /* Products */,
-				7BB1F1913DC57A6D502383F0 /* Pods */,
 				9B8A317E1EBFC107F120642D /* Frameworks */,
 			);
 			indentWidth = 4;
@@ -385,15 +382,6 @@
 				EBA37B4F26F749C6005DAAD4 /* Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7BB1F1913DC57A6D502383F0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1CF8B597BBC32060C9FA476A /* Pods-Example.debug.xcconfig */,
-				BEED427CB4F6E5B8C20B6F13 /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		99019E4A2018CCB8007325C2 /* BottomPager */ = {
@@ -679,6 +667,10 @@
 			dependencies = (
 			);
 			name = YPImagePicker;
+			packageProductDependencies = (
+				79840EFB29E6D32C00A49EFB /* Stevia */,
+				79840EFD29E6D32C00A49EFB /* PryntTrimmerView */,
+			);
 			productName = Fusuma;
 			productReference = 52412A931CA6114A0073C4BE /* YPImagePicker.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1291,7 +1283,6 @@
 		};
 		EBA37B6126F749C7005DAAD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CF8B597BBC32060C9FA476A /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1322,7 +1313,6 @@
 		};
 		EBA37B6226F749C7005DAAD4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEED427CB4F6E5B8C20B6F13 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1401,6 +1391,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		79840EFB29E6D32C00A49EFB /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBA37BCB26F75BCC005DAAD4 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		79840EFD29E6D32C00A49EFB /* PryntTrimmerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBA37BCE26F75C67005DAAD4 /* XCRemoteSwiftPackageReference "PryntTrimmerView" */;
+			productName = PryntTrimmerView;
+		};
 		EBA37BCC26F75BCC005DAAD4 /* Stevia */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EBA37BCB26F75BCC005DAAD4 /* XCRemoteSwiftPackageReference "Stevia" */;

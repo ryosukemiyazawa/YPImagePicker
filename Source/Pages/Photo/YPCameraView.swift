@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import UIKit
+import Stevia
+
 
 internal class YPCameraView: UIView, UIGestureRecognizerDelegate {
     let focusView = UIView(frame: CGRect(x: 0, y: 0, width: 90, height: 90))

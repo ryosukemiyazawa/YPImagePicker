@@ -3,6 +3,9 @@
 
 # AppCode
 .idea/
+.build/
+.github/
+.swiftpm/
 
 # Xcode
 build/
